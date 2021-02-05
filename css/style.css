@@ -1219,12 +1219,12 @@ body.ie ._ibg img {
 }
 
 ._no-webp .control-main-slider__arrow{
-  background: url(../img/icons/sl-arrow.png) 0 0 no-repeat; }
+  background: url("../img/icons/sl-arrow.png") 0 0 no-repeat; }
 
 .control-main-slider__arrow {
   position: relative;
   z-index: 2;
-  width: 13px;
+  width: 14px;
   height: 24px;
   cursor: pointer;
 }
