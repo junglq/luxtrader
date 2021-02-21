@@ -1543,6 +1543,14 @@ body.ie ._ibg img {
   letter-spacing: 1.4px;
   text-transform: uppercase;
   font-family: "PFDin";
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
+.menu__link._active,
+._active.actions-header__region {
+  color: #bb9c66;
 }
 
 .actions-header {
@@ -1623,6 +1631,108 @@ body.ie ._ibg img {
 
 ._no-webp .user-header__link_4{
   background: url("../img/icons/menu/04.png") left center no-repeat; }
+
+.footer {
+  padding: 45px 0px;
+  background-color: #1c242a;
+}
+
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__column_full {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.footer__column:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 180px;
+          flex: 0 0 180px;
+}
+
+.footer__logo {
+  display: inline-block;
+  margin: 0px 0px 25px 0px;
+}
+
+.footer__info {
+  color: #bb9c66;
+}
+
+.footer__menu {
+  padding: 0px 30px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__list li {
+  margin: 15px 15px 0px 0px;
+}
+
+.footer__link {
+  font-family: "PFDin";
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.footer__contacts {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 15px 0px 0px 0px;
+}
+
+.footer__phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 50px;
+  color: #bb9c66;
+  text-transform: uppercase;
+  font-family: "BravoRGRegular";
+  white-space: nowrap;
+  margin: 0px 0px 10px 0px;
+}
+
+.footer__phone small {
+  font-size: 25px;
+  margin: 2px 5px 0px 0px;
+}
+
+.footer__calback {
+  color: #bb9c66;
+  background: url("../img/icons/callback.svg") left no-repeat;
+  padding: 0px 0px 0px 10px;
+}
+
+.footer__calback span {
+  border-bottom: 1px dashed;
+}
 
 .page {
   -webkit-box-flex: 1;
@@ -2412,6 +2522,10 @@ body.ie ._ibg img {
   .user-header__link:hover {
     text-decoration: underline;
   }
+
+  .footer__link:hover {
+    text-decoration: underline;
+  }
 }
 
 @media (min-width: 992px) {
@@ -2435,6 +2549,14 @@ body.ie ._ibg img {
 
   .select__options {
     font-size: 18px;
+  }
+
+  .footer__phone {
+    font-size: 40px;
+  }
+
+  .footer__phone small {
+    font-size: 20px;
   }
 }
 
@@ -2630,6 +2752,37 @@ body.ie ._ibg img {
 
   .user-header__menu {
     width: 100%;
+  }
+
+  .footer__content {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__logo {
+    margin: 0;
+  }
+
+  .footer__info {
+    margin: 25px 0px 0px 0px;
+  }
+
+  .footer__menu {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .footer__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15px 7px 7px 0px;
+  }
+
+  .footer__contacts {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .main-slider .swiper-wrapper {
